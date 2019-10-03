@@ -2,7 +2,7 @@ node('maven-label') {
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-        git branch: '$branch', url: 'https://github.com/NishaMeet/card-appp.git'     
+        git 'https://github.com/NishaMeet/card-appp.git'   
         // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
